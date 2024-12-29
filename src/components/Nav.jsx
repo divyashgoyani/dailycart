@@ -12,13 +12,12 @@ const Nav = () => {
         { name: "About", path: "/about" },
         { name: "Products", path: "/products" },
         { name: "Contact", path: "/contact" },
-        { name: "Cart", path: "/cart",
-            icon: (
-                <>
-                    <FiShoppingCart />
-                    <span className="h-4 aspect-square text-[10px] font-normal text-white flex justify-center items-center absolute -top-2 -right-2 p-0.5 bg-slate-500 rounded-full">0</span>
-                </>
-            ),
+        { name: "Cart", path: "/cart", icon: (
+                                                <>
+                                                    <FiShoppingCart />
+                                                    <span className="h-4 aspect-square text-[10px] font-normal text-white flex justify-center items-center absolute -top-2 -right-2 p-0.5 bg-slate-500 rounded-full">0</span>
+                                                </>
+                                            ),
         },
     ];
 
