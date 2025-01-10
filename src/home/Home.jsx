@@ -1,6 +1,8 @@
 import React from "react";
 import { HeroSection } from "../components/HeroSection";
 import homepageimage from './assets/homepageimage.jpg';
+import Services from "../components/Services";
+import Trusted from "../components/Trusted";
 
 const Home = () => {
     const details = {
@@ -15,6 +17,8 @@ const Home = () => {
     return (
         <div className="w-full grow flex flex-col items-center overflow-auto">
             <HeroSection props={ details } />
+            <Services />
+            <Trusted />
         </div>
     );
 };
