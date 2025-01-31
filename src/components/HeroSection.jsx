@@ -1,21 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export const HeroSection = ({ props }) => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        // Function to check screen size
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 640); // Tailwind's `sm` breakpoint is 640px
-        };
-
-        handleResize(); // Initial check
-        window.addEventListener("resize", handleResize);
-
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // Store
+    const isMobile = useSelector((state) => state.screen.isMobile);
 
     return (
         <div className={`h-fit w-full flex justify-center items-center max-w-[1300px] ${props.styles}`}>

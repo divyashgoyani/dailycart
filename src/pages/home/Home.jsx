@@ -1,8 +1,8 @@
 import React from "react";
-import { HeroSection } from "../components/HeroSection";
+import { HeroSection } from "../../components/HeroSection";
 import homepageimage from './assets/homepageimage.jpg';
-import Services from "../components/Services";
-import Trusted from "../components/Trusted";
+import Services from "../../components/Services";
+import Trusted from "../../components/Trusted";
 
 const Home = () => {
     const details = {

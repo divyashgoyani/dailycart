@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+    // Store
+    const isMobile = useSelector((state) => state.screen.isMobile);
+    console.log(isMobile);
+
     const [menu, setMenu] = useState(false);
     const toggleMenu = () => setMenu((prev) => !prev);
 
